@@ -5,7 +5,7 @@ const sentence = document.querySelector(".sentence");
 // console.log(adviceId);
 // console.log(sentence);
 
-const button = document.querySelector("button");
+const button = document.querySelector(".button");
 
 button.addEventListener("click", getUserData)
 
