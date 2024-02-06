@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #202733;
+  font-family: Manrope;
+}
+
+.box {
+  position: relative;
+  width: 343px;
+  height: 315px;
+  padding: 40px 24px 64px;
+  border-radius: 10px;
+  box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.1);
+  background-color: #313a48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  padding-top: 40px;
+  width: 104px;
+  height: 15px;
+  font-size: 11px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.46px;
+  text-align: center;
+  color: #53ffaa;
+}
+
+p {
+  margin: 24px 0;
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.26px;
+  text-align: center;
+  color: #cee3e9;
+}
+
+.div-mob {
+  margin-top: 20px;
+}
+
+.div-des {
+  display: none;
+}
+
+button {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  flex-grow: 0;
+  background-color: #53ffaa;
+  border: none;
+  background-image: url(./assets/icon-dice.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  border-radius: 50%;
+  box-shadow: rgb(83, 255, 170) 0px 0px 0px 0px;
+
+  top: 560px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: rgb(83, 255, 170) 0px 0px 30px 5px;
+  animation: 1s ease 0s infinite normal none running shadowAnimation;
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 540px;
+  }
+  button {
+    top: 590px;
+  }
+  .div-mob {
+    display: none;
+  }
+  .div-des {
+    display: block;
+  }
+  p {
+    font-size: 28px;
+  }
+}
