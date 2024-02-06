@@ -79,7 +79,7 @@ p {
   transition: box-shadow 0.3s ease-in-out 0s;
   border-radius: 50%;
   box-shadow: rgb(83, 255, 170) 0px 0px 0px 0px;
-  bottom: -32px;
+  bottom: -60px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -90,13 +90,11 @@ p {
   animation: 1s ease 0s infinite normal none running shadowAnimation;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .box {
     width: 540px;
   }
-  .button {
-    top: 590px;
-  }
+
   .div-mob {
     display: none;
   }
